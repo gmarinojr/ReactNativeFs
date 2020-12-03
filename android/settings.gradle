@@ -1,0 +1,5 @@
+rootProject.name = 'ReactNativeFs'
+apply from: file("../node_modules/@react-native-community/cli-platform-android/native_modules.gradle"); applyNativeModulesSettingsGradle(settings)
+include ':app'
+include ':ReactNativeFs'
+project(':ReactNativeFs').projectDir = new File(settingsDir, '../node_modules/react-native-fs/android')
